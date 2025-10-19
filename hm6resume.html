@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume — Your Name</title>
+  <style>
+    :root{--accent:#2563eb;--muted:#6b7280;--bg:#f8fafc}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial, sans-serif;margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
+    .container{max-width:900px;margin:28px auto;padding:22px;background:#fff;border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.08);display:grid;grid-template-columns:220px 1fr;gap:24px}
+    header{grid-column:1/-1;display:flex;align-items:center;gap:18px}
+    .photo{width:96px;height:96px;border-radius:12px;overflow:hidden;flex-shrink:0;border:4px solid #fff;box-shadow:0 6px 20px rgba(37,99,235,0.12)}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .name-title{display:flex;flex-direction:column}
+    h1{font-size:20px;margin:0}
+    p.title{margin:4px 0 0;color:var(--muted);font-size:14px}
+    .sidebar{padding:10px 12px;background:#fbfdff;border-radius:10px}
+    .section{margin-bottom:18px}
+    .section h3{margin:0 0 10px;font-size:13px;color:var(--muted);letter-spacing:0.6px}
+    .contact-item{font-size:14px;color:#0f172a;margin-bottom:8px}
+    .pill{display:inline-block;padding:6px 8px;border-radius:999px;background:#eef2ff;color:var(--accent);font-weight:600;font-size:12px;margin:4px 6px 0 0}
+    main{padding:6px 4px}
+    .summary{background:#fff;padding:12px;border-radius:8px;margin-bottom:12px}
+    .job{margin-bottom:14px}
+    .job h4{margin:0;font-size:15px}
+    .muted{color:var(--muted);font-size:13px}
+    .bullets{margin:8px 0 0;padding-left:18px}
+    footer{grid-column:1/-1;text-align:center;color:var(--muted);font-size:13px;margin-top:6px}
+    @media (max-width:760px){.container{grid-template-columns:1fr;padding:16px}header{flex-direction:row-reverse;justify-content:space-between} .photo{width:76px;height:76px} .sidebar{order:2} main{order:3}}
+    @media print{body{background:#fff} .container{box-shadow:none;border-radius:0} .photo{border:2px solid #fff}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="photo" aria-hidden="true">
+        <img src="photo.jpeg" alt="Your photo">
+      </div>
+      <div class="name-title">
+        <h1>Your Name</h1>
+        <p class="title">Product Designer · Frontend Engineer</p>
+        <p class="muted">Location · Phone · email@example.com · linkedin.com/in/yourname</p>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <div class="section">
+        <h3>CONTACT</h3>
+        <div class="contact-item">email@example.com</div>
+        <div class="contact-item">+886 912 345 678</div>
+        <div class="contact-item">Taipei, Taiwan</div>
+        <div class="contact-item"><a href="#">linkedin.com/in/yourname</a></div>
+      </div>
+
+      <div class="section">
+        <h3>SKILLS</h3>
+        <div class="pill">HTML</div>
+        <div class="pill">CSS</div>
+        <div class="pill">JavaScript</div>
+        <div class="pill">React</div>
+        <div class="pill">Figma</div>
+      </div>
+
+      <div class="section">
+        <h3>LANGUAGES</h3>
+        <div class="contact-item">English — Professional</div>
+        <div class="contact-item">Chinese — Conversational</div>
+        <div class="contact-item">Mongolian — Native</div>
+      </div>
+
+      <div class="section">
+        <h3>EDUCATION</h3>
+        <div class="contact-item"><strong>University Name</strong><br><span class="muted">B.A. in Computer Science — 2021</span></div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="summary">
+        <h3 class="muted">SUMMARY</h3>
+        <p>I build elegant product experiences and solid front-end code. 3+ years of experience shipping web apps, collaborating with cross-functional teams, and iterating quickly based on user feedback. Looking for a role where I can lead UI decisions and improve product metrics.</p>
+      </section>
+
+      <section class="section">
+        <h3>EXPERIENCE</h3>
+
+        <article class="job">
+          <h4>Senior Frontend Engineer — Awesome Company</h4>
+          <div class="muted">May 2023 — Present · Taipei, Taiwan</div>
+          <ul class="bullets">
+            <li>Led the redesign of the main web app, increasing conversion by 18%.</li>
+            <li>Implemented a component library in React + TypeScript used across three products.</li>
+            <li>Mentored junior engineers and improved code review process.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h4>Product Designer — Creative Studio</h4>
+          <div class="muted">Jan 2021 — Apr 2023 · Remote</div>
+          <ul class="bullets">
+            <li>Designed user flows and high-fidelity prototypes for mobile and web.</li>
+            <li>Worked closely with engineers to deliver polished UI and accessibility improvements.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section">
+        <h3>PROJECTS</h3>
+        <div class="job">
+          <h4>Project Name — Personal</h4>
+          <div class="muted">2022</div>
+          <p class="muted">A short 1–2 sentence description of the project, the tech used, and the outcome. Link to repo: <a href="#">github.com/yourrepo</a></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>HONORS & CERTS</h3>
+        <div class="contact-item">Chinggis Khaan Medal — Awarded 2024</div>
+        <div class="contact-item">Certified Scrum Product Owner — 2022</div>
+      </section>
+
+    </main>
+
+    <footer>Generated resume — edit the text and replace the photo link with your own image. Printable and mobile-friendly.</footer>
+  </div>
+</body>
+</html>
